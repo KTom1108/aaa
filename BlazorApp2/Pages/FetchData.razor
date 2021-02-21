@@ -43,6 +43,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+        string aa = "";
         await Task.Run(() => CommonService.SetLoadingTime(2000));
 
         forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
